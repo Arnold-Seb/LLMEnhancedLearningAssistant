@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:text="Back" />
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#0066FF"
+            android:padding="15dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/studentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="student@email.com"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="#0066FF"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Questions: 10"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#0074D9"
+            android:padding="15dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correctly Answered: 10"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#0074D9"
+            android:padding="15dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Profile"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#00FF66"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View History"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/upgradeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upgrade Account"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

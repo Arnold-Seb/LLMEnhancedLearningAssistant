@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:text="Back" />
+
+        <TextView
+            android:id="@+id/upgradeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upgrade Account"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/upgradeSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlock premium AI learning features."
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/basicPlanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starter Plan - Purchase"
+            android:backgroundTint="#00FF66"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/premiumPlanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intermediate Plan - Purchase"
+            android:backgroundTint="#00FF66"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/proPlanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced Plan - Purchase"
+            android:backgroundTint="#00FF66"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>

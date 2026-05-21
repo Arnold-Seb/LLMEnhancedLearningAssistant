@@ -3,12 +3,24 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:theme="@style/Theme.LLMEnhancedLearningAssistant"
-        android:label="LLM Learning Assistant"
         android:allowBackup="true"
-        android:supportsRtl="true"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round">
+        android:label="LLM Learning Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LLMEnhancedLearningAssistant">
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UpgradeActivity"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
