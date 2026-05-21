@@ -12,55 +12,194 @@
 
         <Button
             android:id="@+id/backButton"
-            android:layout_width="55dp"
+            android:layout_width="60dp"
             android:layout_height="45dp"
-            android:text="Back" />
+            android:text="←" />
 
         <TextView
             android:id="@+id/upgradeTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upgrade Account"
-            android:textSize="32sp"
+            android:text="Upgrade"
+            android:textSize="34sp"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="15dp" />
 
         <TextView
             android:id="@+id/upgradeSubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Unlock premium AI learning features."
-            android:textSize="16sp"
+            android:text="your experience"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:textColor="#000000"
             android:layout_marginBottom="20dp" />
 
-        <Button
-            android:id="@+id/basicPlanButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Starter Plan - Purchase"
-            android:backgroundTint="#00FF66"
-            android:textColor="#000000"
-            android:layout_marginTop="15dp" />
+            android:orientation="vertical"
+            android:background="#0066FF"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
 
-        <Button
-            android:id="@+id/premiumPlanButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Intermediate Plan - Purchase"
-            android:backgroundTint="#00FF66"
-            android:textColor="#000000"
-            android:layout_marginTop="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/proPlanButton"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/basicPlanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Advanced Plan - Purchase"
-            android:backgroundTint="#00FF66"
-            android:textColor="#000000"
-            android:layout_marginTop="15dp" />
+            android:orientation="vertical"
+            android:background="#0066FF"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/premiumPlanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0066FF"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improved Quiz generation"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/proPlanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paymentSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EEEEEE"
+            android:padding="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/selectedPlanText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Plan:"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioGroup
+                android:id="@+id/paymentMethodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/googlePayOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google Pay" />
+
+                <RadioButton
+                    android:id="@+id/cardOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit / Debit Card" />
+
+                <RadioButton
+                    android:id="@+id/paypalOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PayPal" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/confirmPaymentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Payment"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
